@@ -1,0 +1,11 @@
+name: poc good call
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  call-good:
+    uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@main
+    secrets:
+      COMMERCE_PROJECT_AUTOMATION: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}

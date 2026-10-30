@@ -1,0 +1,7 @@
+name: poc missing file caller
+on:
+  push:
+    branches: [main]
+jobs:
+  call-missingfile:
+    uses: AdobeDocs/commerce-contributor/.github/workflows/no-such-file.yml@main

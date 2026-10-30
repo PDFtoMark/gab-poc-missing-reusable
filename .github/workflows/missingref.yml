@@ -1,0 +1,7 @@
+name: poc missing ref caller
+on:
+  push:
+    branches: [main]
+jobs:
+  call-missingref:
+    uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@no-such-branch

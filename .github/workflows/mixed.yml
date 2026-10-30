@@ -1,0 +1,11 @@
+name: mixed jobs
+on:
+  push:
+    branches: [main]
+jobs:
+  plain:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "plain job runs"
+  bad:
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main

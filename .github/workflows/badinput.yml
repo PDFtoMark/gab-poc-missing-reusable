@@ -1,0 +1,11 @@
+name: poc bad input caller
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  call-badinput:
+    uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@main
+    with:
+      bogus_input: 1

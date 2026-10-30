@@ -1,0 +1,11 @@
+name: poc control
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  control:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "actions works"
